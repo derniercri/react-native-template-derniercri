@@ -25,7 +25,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import { connect, Provider } from 'react-redux';
+import { connect } from 'react-redux';
+import { Trans } from 'react-i18next';
 
 import store, { counterSlice } from './store';
 
@@ -43,50 +44,48 @@ const Home: React.FC<HomeProps> = ({ counter }) => {
 
   return (
     <>
-      <Provider store={store}>
-        <StatusBar barStyle="dark-content" />
-        <SafeAreaView>
-          <ScrollView
-            contentInsetAdjustmentBehavior="automatic"
-            style={styles.scrollView}>
-            <Header />
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView>
+        <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
+          <Header />
 
-            <View style={styles.body}>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>Step One</Text>
-                <View style={styles.counterWrapper}>
-                  <Button onPress={onDecrementPress} title="-" />
-                  <Text style={styles.sectionTitle}>Counter : {counter}</Text>
-                  <Button onPress={onIncrementPress} title="+" />
-                </View>
-                <Text style={styles.sectionDescription}>
+          <View style={styles.body}>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>Step One</Text>
+              <View style={styles.counterWrapper}>
+                <Button onPress={onDecrementPress} title="-" />
+                <Text style={styles.sectionTitle}>Counter : {counter}</Text>
+                <Button onPress={onIncrementPress} title="+" />
+              </View>
+              <Text style={styles.sectionDescription}>
+                <Trans i18nKey="home__welcome_title">
                   Edit <Text style={styles.highlight}>Home.tsx</Text> to change this
                   screen and then come back to see your edits.
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>See Your Changes</Text>
-                <Text style={styles.sectionDescription}>
-                  <ReloadInstructions />
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>Debug</Text>
-                <Text style={styles.sectionDescription}>
-                  <DebugInstructions />
-                </Text>
-              </View>
-              <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>Learn More</Text>
-                <Text style={styles.sectionDescription}>
-                  Read the docs to discover what to do next:
-                </Text>
-              </View>
-              <LearnMoreLinks />
+                </Trans>
+              </Text>
             </View>
-          </ScrollView>
-        </SafeAreaView>
-      </Provider>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>See Your Changes</Text>
+              <Text style={styles.sectionDescription}>
+                <ReloadInstructions />
+              </Text>
+            </View>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>Debug</Text>
+              <Text style={styles.sectionDescription}>
+                <DebugInstructions />
+              </Text>
+            </View>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>Learn More</Text>
+              <Text style={styles.sectionDescription}>
+                Read the docs to discover what to do next:
+              </Text>
+            </View>
+            <LearnMoreLinks />
+          </View>
+        </ScrollView>
+      </SafeAreaView>
     </>
   );
 };

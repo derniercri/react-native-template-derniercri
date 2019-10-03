@@ -1,5 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import './modules/i18n';
 
 import store from './store';
 import Home from './Home';

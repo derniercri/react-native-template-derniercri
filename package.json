@@ -26,6 +26,7 @@
     ]
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.6.2",
     "i18next": "^17.0.18",
     "ramda": "^0.26.1",
     "react": "16.9.0",
@@ -75,6 +76,7 @@
     "react-dom": "16.9.0",
     "react-native-storybook-loader": "^1.8.1",
     "react-test-renderer": "16.9.0",
+    "reactotron-react-native": "^4.0.2",
     "typescript": "^3.6.3"
   },
   "config": {

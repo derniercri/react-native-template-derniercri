@@ -8,4 +8,10 @@ const IS_STORYBOOK = false;
 
 const Render = IS_STORYBOOK && __DEV__ ? Storybook : App;
 
+if (__DEV__) {
+  import('./reactotron-config').then(() => {
+    console.log('Reactotron Configured');
+  });
+}
+
 AppRegistry.registerComponent(appName, () => Render);

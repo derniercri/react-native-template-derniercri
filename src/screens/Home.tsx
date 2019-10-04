@@ -16,7 +16,6 @@ import {
   View,
   Text,
   StatusBar,
-  Button,
 } from 'react-native';
 import {
   Header,
@@ -27,20 +26,26 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import { connect } from 'react-redux';
 import { Trans } from 'react-i18next';
+import { NavigationStackScreenProps } from 'react-navigation-stack';
 
-import store, { counterSlice } from './store';
+import store, { counterSlice } from '../store';
+import Button from '../components/button';
 
-interface HomeProps {
+interface HomeProps extends NavigationStackScreenProps {
   counter: number;
 }
 
-const Home: React.FC<HomeProps> = ({ counter }) => {
+const Home: React.FC<HomeProps> = ({ counter, navigation }) => {
   const onIncrementPress = useCallback(() => {
     store.dispatch(counterSlice.actions.increment());
   }, []);
   const onDecrementPress = useCallback(() => {
     store.dispatch(counterSlice.actions.decrement());
   }, []);
+
+  const onAproposPress = useCallback(() => {
+    navigation.navigate('Apropos');
+  }, [navigation]);
 
   return (
     <>
@@ -53,10 +58,13 @@ const Home: React.FC<HomeProps> = ({ counter }) => {
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <View style={styles.counterWrapper}>
-                <Button onPress={onDecrementPress} title="-" />
+                <Button onPress={onDecrementPress}>-</Button>
                 <Text style={styles.sectionTitle}>Counter : {counter}</Text>
-                <Button onPress={onIncrementPress} title="+" />
+                <Button onPress={onIncrementPress}>+</Button>
               </View>
+
+              <Button onPress={onAproposPress}>Go to apropos</Button>
+
               <Text style={styles.sectionDescription}>
                 <Trans i18nKey="home__welcome_title">
                   Edit <Text style={styles.highlight}>Home.tsx</Text> to change this

@@ -1,6 +1,16 @@
 {
   "name": "react-native-template-derniercri",
   "version": "0.0.1",
+  "scripts": {
+    "type-check": "tsc --noEmit -p template --pretty"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "husky": "^3.0.8",
+    "lint-staged": "^9.4.1",
+    "typescript": "^3.6.3"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "yarn type-check && lint-staged",

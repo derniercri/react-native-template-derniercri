@@ -41,6 +41,16 @@ jobs:
           paths:
             - template/node_modules
 
+  type-check:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Type check project
+          command: yarn type-check
+
   lint:
     <<: *defaults
     steps:

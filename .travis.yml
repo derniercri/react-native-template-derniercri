@@ -1,4 +1,30 @@
 language: node_js
 
+os: osx
+osx_image: xcode11
+
 node_js:
   - 12
+
+install:
+  - gem install cocoapods
+  - yarn install
+  - cd template && yarn install
+
+stages:
+  - name: Check code style
+  - name: Release
+    if: branch = master
+
+jobs:
+  include:
+    - stage: Check code style
+      name: Check TypeScript
+      script: yarn type-check
+
+    - stage: Check code style
+      name: Lint code
+      script: cd template && yarn lint
+
+    - stage: Release
+      script: npx semantic-release

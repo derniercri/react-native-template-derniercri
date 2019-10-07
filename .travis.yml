@@ -9,7 +9,7 @@ node_js:
 install:
   - gem install cocoapods
   - yarn install
-  - cd template && yarn install
+  - (cd template && yarn install)
 
 stages:
   - name: Check code style
@@ -24,7 +24,7 @@ jobs:
 
     - stage: Check code style
       name: Lint code
-      script: cd template && yarn lint
+      script: (cd template && yarn lint)
 
     - stage: Release
       script: npx semantic-release

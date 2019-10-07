@@ -14,7 +14,7 @@ install:
 stages:
   - name: Check code style
   - name: Release
-    if: branch = master
+    if: branch = master AND type = push
 
 jobs:
   include:

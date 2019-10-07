@@ -31,7 +31,7 @@ jobs:
             - v1-deps-yarn-
       - run:
           name: Install dependencies
-          command: yarn install
+          command: cd template && yarn install
       - save_cache:
           paths:
             - node_modules
@@ -39,21 +39,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - node_modules
-
-  build:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run:
-          name: Build app
-          command: yarn build
-      - persist_to_workspace:
-          root: .
-          paths:
-            - build
+            - template/node_modules
 
   lint:
     <<: *defaults
@@ -63,52 +49,7 @@ jobs:
           at: .
       - run:
           name: Lint project
-          command: yarn lint
-
-  test:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run:
-          name: Test project
-          command: yarn test
-
-  coverage:
-    <<: *defaults
-    environment:
-      CC_TEST_REPORTER_ID: 7d932d7d5f674a14f59b06eb4dee56ce2513ec86180b5f8ef53e2308769ca21f
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - restore_cache:
-          keys:
-            - v1-cc-test-reporter-0.7.0
-      - run:
-          name: Download CodeClimate
-          command: |
-            if [[ ! -x cc-test-reporter ]]
-            then
-              curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-              chmod +x ./cc-test-reporter
-            fi
-      - save_cache:
-          key: v1-cc-test-reporter-0.7.0
-          paths:
-            - "./cc-test-reporter"
-      - run:
-          name: Run coverage and upload to Codecov.io
-          command: |
-            # notify Code Climate of a pending test report using `before-build`
-            ./cc-test-reporter before-build
-            CI=true yarn coverage
-      - run:
-          name: "Upload coverage to CodeClimate"
-          command: ./cc-test-reporter after-build -t lcov coverage/lcov.info --exit-code $? || true
-      - codecov/upload:
-          file: coverage/*.json
+          command: cd template && yarn lint
 
   release:
     <<: *defaults
@@ -128,19 +69,8 @@ workflows:
       - lint:
           requires:
             - prepare
-      - build:
-          requires:
-            - prepare
-      - test:
-          requires:
-            - prepare
-      - coverage:
-          requires:
-            - prepare
       - release:
           requires:
-            - build
-            - test
             - lint
           filters:
             branches:

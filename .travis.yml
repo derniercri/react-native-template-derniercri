@@ -4,6 +4,9 @@ os: osx
 osx_image: xcode11
 
 cache:
+  npm: true
+  cocoapods: true
+  podfile: template/ios/Podfile
   directories:
     - template/node_modules
 

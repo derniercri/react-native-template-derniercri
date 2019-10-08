@@ -44,8 +44,8 @@
     "redux-starter-kit": "0.7.0"
   },
   "devDependencies": {
-    "@babel/core": "7.6.2",
-    "@babel/runtime": "7.6.2",
+    "@babel/core": "7.6.3",
+    "@babel/runtime": "7.6.3",
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@react-native-community/eslint-config": "0.0.5",

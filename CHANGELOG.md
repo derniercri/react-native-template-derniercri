@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.1](https://github.com/derniercri/react-native-template-derniercri/compare/v1.0.0...v1.0.1) (2019-10-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-navigation-stack to v1.9.4 ([c6b2eb7](https://github.com/derniercri/react-native-template-derniercri/commit/c6b2eb7))
+
 # 1.0.0 (2019-10-07)
 
 

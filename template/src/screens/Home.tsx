@@ -35,6 +35,13 @@ interface HomeProps extends NavigationStackScreenProps {
   counter: number;
 }
 
+const Section: React.FC = ({ children }) => (
+  <View style={styles.sectionContainer}>
+    <Text style={styles.sectionTitle}>See Your Changes</Text>
+    <Text style={styles.sectionDescription}>{children}</Text>
+  </View>
+);
+
 const Home: React.FC<HomeProps> = ({ counter, navigation }) => {
   const onIncrementPress = useCallback(() => {
     store.dispatch(counterSlice.actions.increment());
@@ -72,24 +79,17 @@ const Home: React.FC<HomeProps> = ({ counter, navigation }) => {
                 </Trans>
               </Text>
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
+
+            <Section>
+              <ReloadInstructions />
+            </Section>
+
+            <Section>
+              <DebugInstructions />
+            </Section>
+
+            <Section>Read the docs to discover what to do next:</Section>
+
             <LearnMoreLinks />
           </View>
         </ScrollView>
@@ -105,18 +105,6 @@ const styles = StyleSheet.create({
   counterWrapper: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
   },
   highlight: {
     fontWeight: '700',

@@ -33,7 +33,7 @@
 > `react-native@0.61.0` or higher
 
 ```sh
-npx react-native init MyApp --template derniercri
+npx react-native init MyApp --template react-native-template-derniercri
 ```
 
 ### Note on the legacy CLI

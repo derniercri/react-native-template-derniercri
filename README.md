@@ -13,6 +13,10 @@
   <a href="https://github.com/derniercri/react-native-template-derniercri/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
   </a>
+
+  <a href='https://codeclimate.com/github/derniercri/react-native-template-derniercri/maintainability'>
+    <img alt="Maintenability" src="https://img.shields.io/codeclimate/maintainability/derniercri/react-native-template-derniercri" target="_blank">
+  </a>
 </p>
 
 > Clean and minimalist React Native template for a quick start with good technologies, and TypeScript.

@@ -1,5 +1,17 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/derniercri/react-native-template-derniercri/compare/v1.0.1...v1.1.0) (2019-10-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-navigation-tabs to v2.5.6 ([6de3e7c](https://github.com/derniercri/react-native-template-derniercri/commit/6de3e7c))
+
+
+### Features
+
+* dry home page ([bc3f166](https://github.com/derniercri/react-native-template-derniercri/commit/bc3f166))
+
 ## [1.0.1](https://github.com/derniercri/react-native-template-derniercri/compare/v1.0.0...v1.0.1) (2019-10-08)
 
 

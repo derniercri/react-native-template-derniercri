@@ -77,7 +77,7 @@
     "react-native-storybook-loader": "1.8.1",
     "react-test-renderer": "16.10.2",
     "reactotron-react-native": "4.0.2",
-    "typescript": "3.6.3"
+    "typescript": "3.6.4"
   },
   "config": {
     "react-native-storybook-loader": {

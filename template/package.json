@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.6.2",
-    "i18next": "17.0.18",
+    "i18next": "17.1.0",
     "ramda": "0.26.1",
     "react": "16.10.2",
     "react-i18next": "10.13.1",

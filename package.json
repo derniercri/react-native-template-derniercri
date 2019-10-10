@@ -10,21 +10,14 @@
     "@semantic-release/changelog": "3.0.4",
     "@semantic-release/git": "7.0.16",
     "husky": "3.0.8",
-    "lint-staged": "9.4.2",
     "semantic-release": "15.13.24",
     "typescript": "3.6.4"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn type-check && lint-staged",
+      "pre-commit": "yarn type-check",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ]
   },
   "config": {
     "react-native-storybook-loader": {

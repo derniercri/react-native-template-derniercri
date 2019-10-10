@@ -1,0 +1,17 @@
+version: "2"
+exclude_patterns:
+  - "scripts/*"
+  - "**/android"
+  - "**/ios"
+  - "**/node_modules/"
+
+plugins:
+  eslint:
+    enabled: true
+    config:
+      config: template/.eslintrc.js
+    extensions:
+      - .js
+      - .jsx
+      - .ts
+      - .tsx

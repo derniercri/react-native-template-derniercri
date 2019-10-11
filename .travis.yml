@@ -8,7 +8,9 @@ cache:
   cocoapods: true
   podfile: template/ios/Podfile
   directories:
+    - node_modules
     - template/node_modules
+    - template/ios/Pods
 
 node_js:
   - 12
@@ -26,12 +28,10 @@ stages:
 jobs:
   include:
     - stage: Check code style
-      name: Check TypeScript
-      script: yarn type-check
-
-    - stage: Check code style
-      name: Lint code
-      script: (cd template && yarn lint)
+      name: Check code style
+      script:
+        - yarn type-check
+        - yarn --cwd template lint
 
     - stage: Release
       script: npx semantic-release

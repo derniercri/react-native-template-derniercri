@@ -9,7 +9,7 @@
     "@commitlint/config-conventional": "8.2.0",
     "@semantic-release/changelog": "3.0.4",
     "@semantic-release/git": "7.0.16",
-    "husky": "3.0.8",
+    "husky": "3.0.9",
     "semantic-release": "15.13.24",
     "typescript": "3.6.4"
   },

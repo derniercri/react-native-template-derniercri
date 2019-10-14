@@ -1,7 +1,7 @@
 language: node_js
 
-os: osx
-osx_image: xcode11
+# os: osx
+# osx_image: xcode11
 
 cache:
   npm: true
@@ -16,7 +16,7 @@ node_js:
   - 12
 
 install:
-  - gem install cocoapods
+  # - gem install cocoapods
   - yarn install
   - (cd template && yarn install)
 

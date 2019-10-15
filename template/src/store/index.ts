@@ -1,6 +1,7 @@
 import { configureStore, createSlice } from 'redux-starter-kit';
 
 export const counterSlice = createSlice({
+  name: 'counter',
   initialState: 0,
   reducers: {
     increment: state => state + 1,

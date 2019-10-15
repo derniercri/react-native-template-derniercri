@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "lint": "eslint . --ext .js,.ts,.tsx",
-    "postinstall": "jetify && react-native link && (cd ios && pod install)",
-    "start:android": "react-native run-android",
-    "start:ios": "react-native run-ios",
+    "postinstall": "react-native link",
+    "start:android": "jetify && react-native run-android",
+    "start:ios": "(cd ios && pod install) && react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "type-check": "tsc --noEmit -p . --pretty",

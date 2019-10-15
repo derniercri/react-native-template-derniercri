@@ -57,6 +57,7 @@ jobs:
           - extra-android-support
       before_install:
         - nvm install 12.11.1
+        - yes | sdkmanager "build-tools;28.0.3"
       # before_script:
       #   - ./
       script: cd template/android && ./gradlew assembleRelease

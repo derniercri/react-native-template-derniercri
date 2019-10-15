@@ -1,5 +1,13 @@
 # Semantic Versioning Changelog
 
+## [1.1.3](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.2...v1.1.3) (2019-10-15)
+
+
+### Bug Fixes
+
+* slice name ([4f8dcce](https://github.com/derniercri/react-native-template-derniercri/commit/4f8dcce))
+* **deps:** update dependency redux-starter-kit to v0.8.0 ([4e34c5b](https://github.com/derniercri/react-native-template-derniercri/commit/4e34c5b))
+
 ## [1.1.2](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.1...v1.1.2) (2019-10-11)
 
 

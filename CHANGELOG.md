@@ -1,5 +1,16 @@
 # Semantic Versioning Changelog
 
+## [1.1.5](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.4...v1.1.5) (2019-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency i18next to v17.3.0 ([12eab38](https://github.com/derniercri/react-native-template-derniercri/commit/12eab38))
+* **deps:** update dependency react-native-localize to v1.3.1 ([e4c0f5d](https://github.com/derniercri/react-native-template-derniercri/commit/e4c0f5d))
+* **deps:** update dependency react-navigation-stack to v1.10.2 ([d6cd657](https://github.com/derniercri/react-native-template-derniercri/commit/d6cd657))
+* **deps:** update dependency redux-starter-kit to v0.9.1 ([566e294](https://github.com/derniercri/react-native-template-derniercri/commit/566e294))
+* **deps:** update react monorepo to v16.11.0 ([fcebd86](https://github.com/derniercri/react-native-template-derniercri/commit/fcebd86))
+
 ## [1.1.4](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.3...v1.1.4) (2019-10-16)
 
 

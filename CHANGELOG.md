@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.7](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.6...v1.1.7) (2019-10-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-i18next to v10.13.2 ([b90b3ae](https://github.com/derniercri/react-native-template-derniercri/commit/b90b3ae))
+
 ## [1.1.6](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.5...v1.1.6) (2019-10-24)
 
 

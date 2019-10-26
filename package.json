@@ -7,10 +7,10 @@
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
-    "@semantic-release/changelog": "3.0.4",
-    "@semantic-release/git": "7.0.16",
+    "@semantic-release/changelog": "3.0.5",
+    "@semantic-release/git": "7.0.17",
     "husky": "3.0.9",
-    "semantic-release": "15.13.27",
+    "semantic-release": "15.13.28",
     "typescript": "3.6.4"
   },
   "husky": {

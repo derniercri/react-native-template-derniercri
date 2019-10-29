@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.9](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.8...v1.1.9) (2019-10-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-native to v0.61.3 ([69bd095](https://github.com/derniercri/react-native-template-derniercri/commit/69bd095))
+
 ## [1.1.8](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.7...v1.1.8) (2019-10-24)
 
 

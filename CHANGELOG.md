@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.10](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.9...v1.1.10) (2019-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-native-gesture-handler to v1.5.0 ([469a700](https://github.com/derniercri/react-native-template-derniercri/commit/469a700))
+
 ## [1.1.9](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.8...v1.1.9) (2019-10-29)
 
 

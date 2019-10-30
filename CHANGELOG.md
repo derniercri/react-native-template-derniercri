@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.12](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.11...v1.1.12) (2019-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-native-reanimated to v1.3.2 ([05aebf8](https://github.com/derniercri/react-native-template-derniercri/commit/05aebf8))
+
 ## [1.1.11](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.10...v1.1.11) (2019-10-30)
 
 

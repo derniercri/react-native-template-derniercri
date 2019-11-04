@@ -1,5 +1,14 @@
 # Semantic Versioning Changelog
 
+## [1.1.14](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.13...v1.1.14) (2019-11-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency i18next to v19 ([8e053e6](https://github.com/derniercri/react-native-template-derniercri/commit/8e053e6))
+* **deps:** update dependency react-i18next to v11 ([f575748](https://github.com/derniercri/react-native-template-derniercri/commit/f575748))
+* **deps:** update dependency redux-starter-kit to v1 ([fc7dcc0](https://github.com/derniercri/react-native-template-derniercri/commit/fc7dcc0))
+
 ## [1.1.13](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.12...v1.1.13) (2019-10-31)
 
 

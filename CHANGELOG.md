@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.16](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.15...v1.1.16) (2019-11-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-redux to v7.1.3 ([481b2f9](https://github.com/derniercri/react-native-template-derniercri/commit/481b2f9))
+
 ## [1.1.15](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.14...v1.1.15) (2019-11-04)
 
 

@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.19](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.18...v1.1.19) (2019-11-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @react-native-community/async-storage to v1.6.3 ([755013c](https://github.com/derniercri/react-native-template-derniercri/commit/755013c))
+
 ## [1.1.18](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.17...v1.1.18) (2019-11-13)
 
 

@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.20](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.19...v1.1.20) (2019-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v16.12.0 ([1ef15fc](https://github.com/derniercri/react-native-template-derniercri/commit/1ef15fc))
+
 ## [1.1.19](https://github.com/derniercri/react-native-template-derniercri/compare/v1.1.18...v1.1.19) (2019-11-14)
 
 
